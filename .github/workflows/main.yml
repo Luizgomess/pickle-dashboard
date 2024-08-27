@@ -20,6 +20,9 @@ jobs:
         with:
           node-version: '16'
 
+      - name: Navigate to correct directory
+        run: cd pickle-dashboard  # Navega para a subpasta correta
+
       - name: Cache Node.js modules
         uses: actions/cache@v3
         id: npm-cache
@@ -49,6 +52,9 @@ jobs:
         with:
           name: workspace
 
+      - name: Navigate to correct directory
+        run: cd pickle-dashboard  # Navega para a subpasta correta
+
       - name: Run Lint
         run: npm run lint
 
@@ -60,6 +66,9 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: workspace
+
+      - name: Navigate to correct directory
+        run: cd pickle-dashboard  # Navega para a subpasta correta
 
       - name: Run Tests with Coverage
         run: npm run test -- --watch=false --code-coverage
@@ -82,6 +91,9 @@ jobs:
         with:
           name: workspace
 
+      - name: Navigate to correct directory
+        run: cd pickle-dashboard  # Navega para a subpasta correta
+
       - name: Run Build
         run: npm run build
 
@@ -94,11 +106,12 @@ jobs:
         with:
           name: workspace
 
+      - name: Navigate to correct directory
+        run: cd pickle-dashboard  # Navega para a subpasta correta
+
       - name: Deploy to Render
         env:
           RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
         run: |
-          # Assumindo que o build gera arquivos estáticos na pasta 'dist'
-          # e que você já configurou o Render.com para fazer o deploy de um site estático
-          echo "Deploying to Render"
-          render deploy --static-site pickle-dashboard --branch master
+          npm install -g render-cli
+          render-cli deploy --static-site pickle-dashboard --branch master
