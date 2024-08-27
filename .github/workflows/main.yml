@@ -30,7 +30,6 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Install dependencies
-        if: steps.npm-cache.outputs.cache-hit != 'true'
         run: npm ci
 
       - name: Persist workspace
@@ -99,5 +98,7 @@ jobs:
         env:
           RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
         run: |
-          npm install -g render-cli
-          render-cli deploy --static-site pickle-dashboard --branch master
+          # Assumindo que o build gera arquivos estáticos na pasta 'dist'
+          # e que você já configurou o Render.com para fazer o deploy de um site estático
+          echo "Deploying to Render"
+          render deploy --static-site pickle-dashboard --branch master
