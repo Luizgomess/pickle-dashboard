@@ -1,0 +1,12 @@
+{
+  "HELLO": "Hello, world!",
+  "WELCOME": "Welcome to our application!",
+  "NOTHING_FOUND": "Nothing was found",
+  "TRY_A_NEW_SEARCH": "Try a new search.",
+  "HOME": "Home",
+  "SEARCH": "Search",
+  "FAVORITES": "Favorites",
+  "NO_FAVORITES_YET": "It seems you don't have any favorites yet",
+  "GO_BACK_HOME_AND_CHOOSE_THE_BEST": "Go back to the home page and choose the best ones for you.",
+  "GO_BACK_HOME": "Go back home"
+}

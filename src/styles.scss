@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-background: #1F1F1F;
+  --color-surface: #FAFAFA;
+  --color-surface-muted: #A4A4A4;
+  --color-content: #0A0A0A;
+  --color-border: #3D3D3D;
+  --color-muted: #CACACA;
+  --color-primary: #00B5CC;
+  --color-accent: #B2DF28;
+  --color-white: #FFFFFF;
+}
+
+@import './assets/scss/global.scss';

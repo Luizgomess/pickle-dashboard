@@ -1,0 +1,12 @@
+{
+  "HELLO": "Olá, mundo!",
+  "WELCOME": "Bem-vindo à nossa aplicação!",
+  "NOTHING_FOUND": "Nada foi encontrado",
+  "TRY_A_NEW_SEARCH": "Tente realizar uma nova busca.",
+  "HOME": "Início",
+  "SEARCH": "Pesquisar",
+  "FAVORITES": "Favoritos",
+  "NO_FAVORITES_YET": "Parece que você ainda não tem favoritos",
+  "GO_BACK_HOME_AND_CHOOSE_THE_BEST": "Volte à página inicial e escolha os melhores para você.",
+  "GO_BACK_HOME": "Voltar ao início"
+}

@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Poppins", system-ui, sans-serif;
+  src: url('../../fonts/Poppins-Thin.ttf') format('ttf'),
+    url('../../fonts/Poppins-ThinItalic.ttf') format('ttf'),
+    url('../../fonts/Poppins-Light.ttf') format('ttf'),
+    url('../../fonts/Poppins-LightItalic.ttf') format('ttf'),
+    url('../../fonts/Poppins-Medium.ttf') format('ttf'),
+    url('../../fonts/Poppins-MediumItalic.ttf') format('ttf'),
+    url('../../fonts/Poppins-SemiBold.ttf') format('ttf'),
+    url('../../fonts/Poppins-SemiBoldItalic.ttf') format('ttf'),
+    url('../../fonts/Poppins-Bold.ttf') format('ttf'),
+    url('../../fonts/Poppins-BoldItalic.ttf') format('ttf'),
+    url('../../fonts/Poppins-ExtraBold.ttf') format('ttf'),
+    url('../../fonts/Poppins-ExtraBoldItalic.ttf') format('ttf'),
+    url('../../fonts/Poppins-Black.ttf') format('ttf'),
+    url('../../fonts/Poppins-BlackItalic.ttf') format('ttf'),
+    url('../../fonts/Creepster-Regular.ttf') format('ttf');
+  font-style: normal;
+}
+
+$primary-font: "Poppins", system-ui, sans-serif;
+$secondary-font: "Creepster", system-ui, sans-serif;

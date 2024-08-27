@@ -1,0 +1,31 @@
+@import './variables/colors';
+@import './variables/font';
+@import './variables/icons';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-optical-sizing: auto;
+  font-family: $primary-font;
+  font-style: normal;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html {
+      font-size: 16px; 
+  }
+  body {
+      font-size: 1em;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: $color-background;
+  font-size: 1.6em;
+}
