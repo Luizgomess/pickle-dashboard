@@ -4,7 +4,4 @@ import { Directive } from '@angular/core';
   selector: '[appButton]'
 })
 export class ButtonDirective {
-
-  constructor() { }
-
 }
