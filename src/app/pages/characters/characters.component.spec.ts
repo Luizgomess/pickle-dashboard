@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CharactersComponent } from './characters.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('CharactersComponent', () => {
   let component: CharactersComponent;
@@ -8,6 +9,7 @@ describe('CharactersComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
+      imports: [TranslateModule.forRoot()],
       declarations: [CharactersComponent]
     });
     fixture = TestBed.createComponent(CharactersComponent);
