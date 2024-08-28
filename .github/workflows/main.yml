@@ -67,7 +67,7 @@ jobs:
 
       - name: Verify Code Coverage
         run: |
-          COVERAGE=$(grep -Po '(?<=lines[^0-9]+)[0-9]+(?=%)' coverage/lcov-report/index.html)
+          COVERAGE=$(grep -A 1 'Lines' coverage/lcov-report/index.html | grep -Po '[0-9]+(?=%)')
           echo "Code Coverage: $COVERAGE%"
           if [ $COVERAGE -lt 80 ]; then
             echo "Code coverage is below 80%"
