@@ -66,7 +66,7 @@ jobs:
         run: npm ci
 
       - name: Run Tests with Coverage
-        run: npm run test:coverage
+        run: npm run test:ci
 
   build:
     runs-on: ubuntu-latest
@@ -103,7 +103,5 @@ jobs:
 
       - name: Deploy to Render
         env:
-          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
-        run: |
-          echo "Deploying to Render"
-          render deploy --static-site pickle-dashboard --branch master
+          RENDER_HOOK_URL: ${{ secrets.RENDER_HOOK_URL }}
+        run: curl -X POST $RENDER_HOOK_URL
