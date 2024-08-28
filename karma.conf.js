@@ -40,6 +40,7 @@ module.exports = function (config) {
     },
     reporters: ['progress', 'kjhtml'],
     browsers: ['Chrome'],
+    singleRun: true,
     restartOnFileChange: true
   });
 };
